@@ -8,9 +8,13 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+  <header class="entry-header">
 
-	<div class="entry-content">
+    <h2 class="entry-title text-center">Portfolio</h2>
+
+  </header><!-- .entry-header -->
+
+	<div class="entry-content text-center">
 
 		<?php the_content(); ?>
 

@@ -71,3 +71,9 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Load Custom Portfolio Front Page
+ */
+
+require get_template_directory() . '/inc/custom_portfolio_front_page.php';

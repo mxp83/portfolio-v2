@@ -1,1 +1,90 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	background: $brand-blue;
+	font-family: 'Lato', sans-serif;
+	color: $white;
+
+	.navbar-white {
+		background-color: $off-white;
+
+		.container {
+			margin-left:0;
+			margin-right:0;
+		}
+		.navbar-toggler {
+			padding: 0.5rem 0.8rem;
+
+			.icon-bar {
+		      background-color: #888;
+		      display: block;
+		      width: 26px;
+		      height: 3px;
+		      border-radius: 1px;
+		    }
+		    .icon-bar + .icon-bar {
+		      margin-top: 4px;
+		    }
+		}
+	}
+	.jumbotron {
+		background: $jumbotron;
+		background-size: cover;
+
+		.lead {
+			font-size:1rem;
+		}
+	}
+	.portfolio-text, .skillset-text {
+		background: $trees;
+		background-size:cover;
+	}
+	#portfolio-cases {
+		.case_item {
+			position:relative;
+			padding: 0;
+
+			.case_img {
+				height:235px;
+				background-size:cover;
+			}
+			.case_text {
+				position: absolute;
+				z-index: 3;
+				right: 0;
+				bottom: 15px;
+				width: 238px;
+				height: 55px;
+				background-color: $brand-blue;
+				padding: 0.4rem;
+
+				h5 {
+					font-size: 1rem;
+				}
+			}
+			.case_link {
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+		}
+	}
+	.site-main {
+		header {
+			h2.entry-title {
+				text-transform: uppercase;
+				font-size: 1.67rem;
+			}
+		}
+	}
+}
+
+.temp-circle {
+	background-color:$white;
+	width:127px;
+	height: 127px;
+	border-radius:63px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
