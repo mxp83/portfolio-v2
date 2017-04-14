@@ -70,7 +70,7 @@
 
     if ( $recent ) {
 
-    		$out .= '<div id="portfolio-cases">';
+    		$out .= '<div id="portfolio-cases" class="row">';
 
 
 	        foreach ( $recent as $item ) {

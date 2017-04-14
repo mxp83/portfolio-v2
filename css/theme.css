@@ -9209,6 +9209,9 @@ h1.navbar-brand a:hover {
 .gallery-caption {
   display: block; }
 
+.hidden {
+  display: none; }
+
 body {
   background: #071F33;
   font-family: 'Lato', sans-serif;
@@ -9269,6 +9272,76 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
+
+.wrapper-fluid.wrapper-navbar {
+  background-color: #F3F3F3;
+  padding: 2px;
+  color: #000; }
+
+#main-menu {
+  margin-top: 10vh;
+  flex-direction: column; }
+  #main-menu .menu-item {
+    float: none;
+    display: block;
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 2.250rem;
+    text-transform: uppercase; }
+  #main-menu a {
+    color: white; }
+    #main-menu a:hover {
+      color: black; }
+
+.pop_menu {
+  background: #071F33;
+  position: absolute;
+  z-index: 25;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.8s ease;
+  opacity: 0;
+  color: #FFFFFF; }
+
+.pop_menu_open {
+  -webkit-animation: fade-in 0.8s ease;
+  -moz-animation: fade-in 0.8s ease;
+  opacity: 1; }
+
+.pop_menu_close {
+  -webkit-animation: fade-out 0.8s ease;
+  -moz-animation: fade-out 0.8s ease;
+  opacity: 0; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes expandWidth {
+  0% {
+    width: 0; } }
 
 /*
 * Use existing Bootstrap 4 classes and

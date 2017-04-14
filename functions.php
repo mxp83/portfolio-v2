@@ -77,3 +77,8 @@ require get_template_directory() . '/inc/editor.php';
  */
 
 require get_template_directory() . '/inc/custom_portfolio_front_page.php';
+
+/**
+* Inject Menu items.
+*/
+require get_template_directory() . '/inc/menu-inject.php';
