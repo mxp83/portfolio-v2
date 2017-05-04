@@ -28,11 +28,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page">
 
     <!-- ******************* The Navbar Area ******************* -->
-    <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
+    <div class="wrapper wrapper-navbar" id="wrapper-navbar">
 
       <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
-
-      <div class="menu_button">MENU</div>
+        <div class="menu_button"><i class="fa fa-bars" aria-hidden="true"></i></div>
       <div class="pop_menu hidden">
 
           <!-- The WordPress Menu goes here -->

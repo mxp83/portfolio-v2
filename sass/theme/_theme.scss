@@ -4,7 +4,7 @@
 	display:none;
 }
 body {
-	background: $brand-blue;
+	background: $brand-primary;
 	font-family: 'Lato', sans-serif;
 	color: $white;
 
@@ -30,6 +30,10 @@ body {
 		    }
 		}
 	}
+	.menu_button {
+		font-size:1.4rem;
+		padding: 0 2%;
+	}
 	.jumbotron {
 		background: $jumbotron;
 		background-size: cover;
@@ -38,9 +42,24 @@ body {
 			font-size:1rem;
 		}
 	}
-	.portfolio-text, .skillset-text {
+	.portfolio-text {
+		background-color: $brand-yellow;
+		// background: $trees;
+		background-size:cover;
+		color: $brand-primary;
+	}
+	.skillset-text {
 		background: $trees;
 		background-size:cover;
+	}
+	.contact-text {
+		background-color: #222;
+		a {
+			color:white;
+			text-decoration: none;
+			font-weight: bold;
+			font-size:1.2rem;
+		}
 	}
 	#portfolio-cases {
 		.case_item {
@@ -58,7 +77,8 @@ body {
 				bottom: 15px;
 				width: 238px;
 				height: 55px;
-				background-color: $brand-blue;
+				color: $brand-primary;
+				background-color: $brand-yellow;
 				padding: 0.4rem;
 
 				h5 {
@@ -92,7 +112,7 @@ body {
 	margin-bottom:20px;
 }
 
-.wrapper-fluid.wrapper-navbar {
+.wrapper-navbar {
 	background-color: $off-white;
 	padding:2px;
 	color:#000;
@@ -113,16 +133,20 @@ body {
 	}
 	a {
 		color: white;
+		transition: color 0.2s ease-in-out;
 
 		&:hover {
-			color: darken($brand-primary,20%);
+			color: lighten($brand-primary,20%);
 		}
+	}
+	.close_button {
+		cursor: pointer;
 	}
 }
 
 //Hidden Layer Nav menu
 .pop_menu {
-	background: $brand-primary;
+	background: rgba($brand-orange,0.95);
 	position:absolute;
 	z-index:25;
 	top:0;

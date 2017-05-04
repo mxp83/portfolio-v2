@@ -9231,14 +9231,28 @@ body {
         border-radius: 1px; }
       body .navbar-white .navbar-toggler .icon-bar + .icon-bar {
         margin-top: 4px; }
+  body .menu_button {
+    font-size: 1.4rem;
+    padding: 0 2%; }
   body .jumbotron {
     background: url("../img/jumbotron.png") center center no-repeat;
     background-size: cover; }
     body .jumbotron .lead {
       font-size: 1rem; }
-  body .portfolio-text, body .skillset-text {
+  body .portfolio-text {
+    background-color: #FFC000;
+    background-size: cover;
+    color: #071F33; }
+  body .skillset-text {
     background: url("../img/portfolio-text.png") center center no-repeat;
     background-size: cover; }
+  body .contact-text {
+    background-color: #222; }
+    body .contact-text a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem; }
   body #portfolio-cases .case_item {
     position: relative;
     padding: 0; }
@@ -9252,7 +9266,8 @@ body {
       bottom: 15px;
       width: 238px;
       height: 55px;
-      background-color: #071F33;
+      color: #071F33;
+      background-color: #FFC000;
       padding: 0.4rem; }
       body #portfolio-cases .case_item .case_text h5 {
         font-size: 1rem; }
@@ -9273,7 +9288,7 @@ body {
   margin-right: auto;
   margin-bottom: 20px; }
 
-.wrapper-fluid.wrapper-navbar {
+.wrapper-navbar {
   background-color: #F3F3F3;
   padding: 2px;
   color: #000; }
@@ -9289,12 +9304,15 @@ body {
     font-size: 2.250rem;
     text-transform: uppercase; }
   #main-menu a {
-    color: white; }
+    color: white;
+    transition: color 0.2s ease-in-out; }
     #main-menu a:hover {
-      color: black; }
+      color: #13568d; }
+  #main-menu .close_button {
+    cursor: pointer; }
 
 .pop_menu {
-  background: #071F33;
+  background: rgba(255, 148, 0, 0.95);
   position: absolute;
   z-index: 25;
   top: 0;

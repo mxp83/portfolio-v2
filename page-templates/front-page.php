@@ -13,11 +13,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<div class="temp-circle"></div><!-- not permanent -->
+				<p class="lead text-center">Hi!  I am Marco Payumo, and I am a UI/UX and graphic designer from Vancouver, BC, Canada.</p>
 
-		<div class="temp-circle"></div><!-- not permanent -->
-		<p class="lead text-center">Hi!  I am Marco Payumo, and I am a UI/UX and graphic designer from Vancouver, BC, Canada.</p>
-
-		<p class="lead text-center">I am skilled in various areas, ranging from design, to html and css + javascript, and have experience building Wordpress sites.</p>
+				<p class="lead text-center">I am skilled in various areas, ranging from design, to html and css + javascript, and have experience building Wordpress sites.</p>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -25,9 +28,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content">
 
-		<div class="row">
+		<div class="row justify-content-center">
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="col-md-8 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
@@ -60,9 +63,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper skillset-text">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
+		<div class="row justify-content-center">
+			<div class="col-md-8 text-center">
+				<h2 class="entry-title text-center">SKILLSET</h2>
 				<?php the_field('skillset_text'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrapper contact-text">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8 text-center">
+				<h2 class="entry-title text-center">CONTACT</h2>
+				<?php the_field('contact_text'); ?>
 			</div>
 		</div>
 	</div>
