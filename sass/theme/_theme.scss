@@ -4,7 +4,8 @@
 	display:none;
 }
 body {
-	background: $brand-primary;
+	background: radial-gradient(circle, $brand-secondary, darken($brand-primary,30%));
+	height:100%;
 	font-family: 'Lato', sans-serif;
 	color: $white;
 
@@ -33,27 +34,22 @@ body {
 	.menu_button {
 		font-size:1.4rem;
 		padding: 0 2%;
+		cursor: pointer;
 	}
 	.jumbotron {
-		background: $jumbotron;
-		background-size: cover;
+		background-color:transparent;
 
 		.lead {
 			font-size:1rem;
 		}
 	}
 	.portfolio-text {
-		background-color: $brand-yellow;
-		// background: $trees;
-		background-size:cover;
-		color: $brand-primary;
+		color: $white;
 	}
 	.skillset-text {
-		background: $trees;
-		background-size:cover;
 	}
 	.contact-text {
-		background-color: #222;
+		background-color:transparent;
 		a {
 			color:white;
 			text-decoration: none;
@@ -62,6 +58,9 @@ body {
 		}
 	}
 	#portfolio-cases {
+		border-top:3px solid $gold;
+		border-bottom:3px solid $gold;
+
 		.case_item {
 			position:relative;
 			padding: 0;
@@ -77,9 +76,10 @@ body {
 				bottom: 15px;
 				width: 238px;
 				height: 55px;
-				color: $brand-primary;
-				background-color: $brand-yellow;
+				color: $white;
+				background-color: $gold;
 				padding: 0.4rem;
+				box-shadow: -2px 2px 0px 0px rgba(71,67,71,1);
 
 				h5 {
 					font-size: 1rem;
@@ -113,9 +113,9 @@ body {
 }
 
 .wrapper-navbar {
-	background-color: $off-white;
+	background-color: transparent;
 	padding:2px;
-	color:#000;
+	color:$gold;
 }
 
 
@@ -146,7 +146,7 @@ body {
 
 //Hidden Layer Nav menu
 .pop_menu {
-	background: rgba($brand-orange,0.95);
+	background: rgba($brand-primary,0.95);
 	position:absolute;
 	z-index:25;
 	top:0;
@@ -156,6 +156,12 @@ body {
 	transition: opacity 0.8s ease;
 	opacity:0;
 	color:$white;
+
+	a {
+		&:hover {
+			color:$gold;
+		}
+	}
 }
 .pop_menu_open {
 	-webkit-animation: fade-in 0.8s ease;
