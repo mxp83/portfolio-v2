@@ -11,11 +11,11 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div class="jumbotron jumbotron-fluid">
+<div id="welcome_box" class="wrapper">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
-				<div class="temp-circle"></div><!-- not permanent -->
+				<div class="face-circle"></div><!-- not permanent -->
 				<p class="lead text-center">Hi!  I am Marco Payumo, and I am a UI/UX and graphic designer from Vancouver, BC, Canada.</p>
 
 				<p class="lead text-center">I am skilled in various areas, ranging from design, to html and css + javascript, and have experience building Wordpress sites.</p>

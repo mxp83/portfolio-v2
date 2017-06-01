@@ -9,6 +9,10 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: $white;
 
+	a {
+		color:$gold;
+	}
+
 	.navbar-white {
 		background-color: $off-white;
 
@@ -66,7 +70,8 @@ body {
 			padding: 0;
 
 			.case_img {
-				height:235px;
+				height:40vh;
+				max-height: 400px;
 				background-size:cover;
 			}
 			.case_text {
@@ -79,7 +84,6 @@ body {
 				color: $white;
 				background-color: $gold;
 				padding: 0.4rem;
-				box-shadow: -2px 2px 0px 0px rgba(71,67,71,1);
 
 				h5 {
 					font-size: 1rem;
@@ -92,18 +96,17 @@ body {
 			}
 		}
 	}
-	.site-main {
-		header {
-			h2.entry-title {
-				text-transform: uppercase;
-				font-size: 1.67rem;
-			}
-		}
+	h2.entry-title {
+		text-transform: uppercase;
+		font-size: 2rem;
+		color:$gold;
 	}
 }
 
-.temp-circle {
+.face-circle {
 	background-color:$white;
+	background-image:url('../img/face.jpg');
+	background-size:cover;
 	width:127px;
 	height: 127px;
 	border-radius:63px;
@@ -174,7 +177,6 @@ body {
 	opacity: 0;
 }
 
-
 //Keyframe animations
 @-webkit-keyframes fade-in {
 	0% { opacity: 0; }
@@ -194,4 +196,8 @@ body {
 }
 @-webkit-keyframes expandWidth {
 	0% { width: 0; }
+}
+@-webkit-keyframes fade-in-slide-up {
+	0% { opacity:0; bottom: -5vh; }
+	100% { opacity:1; bottom: 0; }
 }

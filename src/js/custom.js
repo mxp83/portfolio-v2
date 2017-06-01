@@ -12,3 +12,7 @@ $('.close_button').click(function(){
 		next();
 	});
 });
+
+$(window).load(function(){
+	$('body').addClass('loaded');
+});
