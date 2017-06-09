@@ -7,6 +7,7 @@
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -9212,6 +9213,13 @@ h1.navbar-brand a:hover {
 .hidden {
   display: none; }
 
+.break-header {
+  margin-left: -100%;
+  margin-right: -100%;
+  margin-bottom: 30px;
+  height: 75vh;
+  overflow: hidden; }
+
 body {
   background: radial-gradient(circle, #6d788c, black);
   height: 100%;
@@ -9219,6 +9227,8 @@ body {
   color: #FFFFFF; }
   body a {
     color: #d0b490; }
+  body #welcome_box {
+    height: 100vh; }
   body .navbar-white {
     background-color: #EEF4ED; }
     body .navbar-white .container {
@@ -9243,7 +9253,8 @@ body {
     body .jumbotron .lead {
       font-size: 1rem; }
   body .portfolio-text {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    height: 50vh; }
   body .contact-text {
     background-color: transparent; }
     body .contact-text a {
@@ -9279,16 +9290,19 @@ body {
         display: block; }
   body h2.entry-title {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-font-family: 'Montserrat', sans-serif;
     color: #d0b490; }
 
 .face-circle {
   background-color: #FFFFFF;
   background-image: url("../img/face.jpg");
   background-size: cover;
-  width: 127px;
-  height: 127px;
-  border-radius: 63px;
+  width: 240px;
+  height: 240px;
+  border: 10px solid #d0b490;
+  border-radius: 120px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
@@ -9339,6 +9353,17 @@ body {
   -webkit-animation: fade-out 0.8s ease;
   -moz-animation: fade-out 0.8s ease;
   opacity: 0; }
+
+.portfolio_cases-template-default header.entry-header {
+  margin: 10vh 0; }
+  .portfolio_cases-template-default header.entry-header h2.entry-title {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-font-family: 'Montserrat', sans-serif; }
+
+.portfolio_cases-template-default .entry-content {
+  text-align: center; }
 
 @-webkit-keyframes fade-in {
   0% {

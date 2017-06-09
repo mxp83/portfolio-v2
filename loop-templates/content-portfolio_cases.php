@@ -6,6 +6,7 @@
  */
 ?>
 
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
   <header class="entry-header">
@@ -13,6 +14,10 @@
     <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
   </header><!-- .entry-header -->
+
+<!--   <div class="break-header">
+    <img src="<?php the_field('header_image'); ?>" alt="">
+  </div> -->
 
   <div class="entry-content">
     <?php the_content(); ?>

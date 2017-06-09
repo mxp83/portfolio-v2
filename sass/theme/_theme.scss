@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 .hidden {
 	display:none;
+}
+.break-header {
+	margin-left:-100%;
+	margin-right:-100%;
+	margin-bottom:30px;
+	height:75vh;
+	overflow:hidden;
 }
 body {
 	background: radial-gradient(circle, $brand-secondary, darken($brand-primary,30%));
@@ -11,6 +19,9 @@ body {
 
 	a {
 		color:$gold;
+	}
+	#welcome_box {
+		height:100vh;
 	}
 
 	.navbar-white {
@@ -49,6 +60,7 @@ body {
 	}
 	.portfolio-text {
 		color: $white;
+		height: 50vh;
 	}
 	.skillset-text {
 	}
@@ -98,7 +110,9 @@ body {
 	}
 	h2.entry-title {
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 3.5rem;
+		font-weight: bold;
+		font-font-family: 'Montserrat', sans-serif;		
 		color:$gold;
 	}
 }
@@ -107,9 +121,10 @@ body {
 	background-color:$white;
 	background-image:url('../img/face.jpg');
 	background-size:cover;
-	width:127px;
-	height: 127px;
-	border-radius:63px;
+	width:240px;
+	height: 240px;
+	border: 10px solid $gold;
+	border-radius:120px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:20px;
@@ -176,6 +191,24 @@ body {
 	-moz-animation: fade-out 0.8s ease;
 	opacity: 0;
 }
+//Portfolio Cases
+.portfolio_cases-template-default {
+	header.entry-header {
+		margin:10vh 0;
+
+		h2.entry-title {
+			font-size: 3.5rem;
+			text-align: center;
+			font-weight: bold;
+			font-font-family: 'Montserrat', sans-serif;
+		}
+	}
+	.entry-content {
+		text-align: center;
+	}
+}
+
+
 
 //Keyframe animations
 @-webkit-keyframes fade-in {

@@ -11,12 +11,12 @@ get_header();
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<div id="welcome_box" class="wrapper">
+<div id="welcome_box" class="wrapper d-flex align-items-center">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
 				<div class="face-circle"></div><!-- not permanent -->
-				<p class="lead text-center">Hi!  I am Marco Payumo, and I am a UI/UX and graphic designer from Vancouver, BC, Canada.</p>
+				<p class="lead text-center">Hi!  I am Marco Payumo, and I am a Web Developer and sometimes Graphic Designer from Vancouver, BC, Canada.</p>
 
 				<p class="lead text-center">I am skilled in various areas, ranging from design, to html and css + javascript, and have experience building Wordpress sites.</p>
 			</div>
@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 </div>
 
-<div class="wrapper portfolio-text" id="full-width-page-wrapper">
+<div class="wrapper portfolio-text d-flex align-items-center" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content">
 

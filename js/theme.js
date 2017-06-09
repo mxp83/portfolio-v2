@@ -5398,3 +5398,14 @@ $('.close_button').click(function(){
 $(window).load(function(){
 	$('body').addClass('loaded');
 });
+
+$(function(){
+	$('a.nav-link').on('click',function(){
+		$('body').removeClass('loaded').fadeIn('#loader-wrapper',500);
+
+		var href = $(this).attr('href');
+
+		setTimeout(function() {window.location = href}, 1000);
+        return false;
+	});
+})
